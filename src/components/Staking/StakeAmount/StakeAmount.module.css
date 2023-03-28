@@ -1,0 +1,123 @@
+.stakeAmountContainer {
+  background: rgba(214, 237, 255, 0.12);
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 10px;
+}
+.availableContainer {
+  padding-bottom: 4px;
+}
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #d6edff;
+}
+.text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(214, 237, 255, 0.5);
+}
+.subText {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 120%;
+  color: rgba(214, 237, 255, 0.5);
+}
+.valueWrapper {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: center;
+  gap: 8px;
+  background: rgba(214, 237, 255, 0.12);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.form {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  gap: 8px;
+}
+.currency {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #d6edff;
+  opacity: 0.6;
+}
+.input {
+  width: 100%;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+
+  letter-spacing: 0.06em;
+
+  color: #d6edff;
+
+  padding: 10px 0px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.unsContainer {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.image {
+  width: 30px;
+}
+.uns,
+.ubs {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(24, 51, 46, 0.8);
+}
+.ubs {
+  color: rgba(214, 237, 255, 0.6);
+}
+.value {
+  color: rgba(28, 237, 134, 0.6);
+}
+@media only screen and (max-width: 520px) {
+  .currency,
+  .input {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .valueWrapper {
+    grid-template-columns: 1fr 70px;
+  }
+  .image {
+    width: 26px;
+  }
+}

@@ -1,0 +1,66 @@
+.historyOfStackingWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+
+  background: rgba(214, 237, 255, 0.1);
+  border-radius: 22px;
+  padding: 18px;
+}
+.spaceBetween {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: rgba(214, 237, 255, 0.8);
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.filterAndShort,
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: rgba(214, 237, 255, 0.16);
+  border-radius: 16px;
+  padding: 8px 18px;
+  height: 41px;
+  cursor: pointer;
+}
+.filterAndShort .text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #d6edff;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 520px) {
+  .spaceBetween {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .spaceBetween {
+    padding: 0 10px;
+  }
+  .historyOfStackingWrapper {
+    padding: 18px 5px;
+    padding-bottom: 5px;
+  }
+}
